@@ -1,0 +1,8 @@
+<h1>Mon Portefeuille de Compétences</h1>
+<ul>
+    {% for competence in competences %}
+        <li>
+            <strong>{{ competence.name }}</strong> : {{ competence.description }}
+        </li>
+    {% endfor %}
+</ul>

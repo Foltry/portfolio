@@ -1,0 +1,10 @@
+<h1>Ma Veille Technologique</h1>
+<ul>
+    {% for technology in technologies %}
+        <li>
+            <strong>{{ technology.name }}</strong> : {{ technology.description }}
+            <br>
+            Source : <a href="{{ technology.source }}">{{ technology.source }}</a>
+        </li>
+    {% endfor %}
+</ul>

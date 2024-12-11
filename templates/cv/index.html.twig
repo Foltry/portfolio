@@ -1,0 +1,10 @@
+<h1>Mon CV</h1>
+<ul>
+    {% for experience in experiences %}
+        <li>
+            <a href="{{ path('app_cv_show', { id: experience.id }) }}">
+                {{ experience.title }} chez {{ experience.company }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
